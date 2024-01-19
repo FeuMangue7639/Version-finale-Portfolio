@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p :hover{
+    opacity: 0.4;
+}
+
+footer p{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
