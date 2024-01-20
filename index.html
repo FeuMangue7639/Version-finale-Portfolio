@@ -16,29 +16,32 @@
     <title>Portfolio avec VueJS</title>
   </head>
 
-  <body id="app">
+  <body id="app" v-cloak>
 
 
     
 
     <header>
         
-      <nav class="navbar navbar-expand-lg navbar-light bg-purple">
-        <a class="navbar-brand" href="./index.html"> <img src="./images/favicon-32x32.png" alt="Accueil"> </a>
-        
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Créations <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Formulaire de contacte</a>
-            </li>
-            
-          </ul>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-purple">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="./images/favicon-32x32.png" alt="Accueil"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" :class="{ active: showHome }" aria-current="page" href="#" @click.prevent="goToHome()">Créations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" :class="{ active: showCreateForm || showStudentsList }" href="#" @click.prevent="goToStudentsList()">Formulaire de contacte</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     </header> 
 
@@ -175,6 +178,7 @@
 
 
     <script src="https://unpkg.com/vue@next"></script>
+
 
 
     <script src="./js/app.js"></script>
