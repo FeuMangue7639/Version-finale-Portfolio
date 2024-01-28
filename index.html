@@ -20,7 +20,8 @@
     <meta name="description" content=" Ce Portfolio a pour but de montrer toutes mes compétences ainsi que les projets que j'ai réalisé. Vous pourrez aussi y trouver un forrmulaire de contacte et toutes les informations nécessaires à mon sujet ! ">
     <title>Portfolio avec VueJS</title>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
 
   </head>
 
@@ -117,39 +118,14 @@
                                   </div>
                                 
                                 <div class="col-12">
-                                  <button type="submit" class="btn btn-primary "><i class="fas fa-save"></i> Créer</button>
-                                  <button type="button" @click.prevent="goToFormulaire()" class="btn btn-danger ms-2"><i class="fas fa-backspace"></i> Retouner à la liste</button>
+                                  <a href="mailto:coelhohugo2003@gmail.com?subject=Sujet%20de%20l'email&body=Corps%20de%20l'email" class="btn btn-primary btn-custom">
+                                    <i class="fas fa-save"></i> Envoyer
+                                  </a>
+                                  
+                                  <button type="button" @click.prevent="goToHome()" class="btn btn-danger ms-2"><i class="fas fa-backspace"></i> Retouner à l'accueil</button>
                                 </div>
                               </form>
                         </div>
-                        <div v-if="showFormulaire">
-                            <div class="d-flex mb-2" >
-                                <h5 class="card-title flex-grow-1">Messages</h5>
-                            </div>
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                    <th class="text-center">Nom(s)</th>
-                                    <th class="text-center">Prénom(s)</th>
-                                    <th class="text-center">Date de naissance</th>
-                                    <th class="text-center">Message</th>
-                                    <th class="text-center">Action</th>
-                                </thead>
-                               
-                                <tbody>
-                                    <tr >
-                                          <td class="text-center"> Test </td>
-                                          <td class="text-center">Test </td>
-                                          <td class="text-center">Test</td>
-                                          <td class="text-center">Test</td>
-                                          <td class="text-center">
-                                              <button class="btn btn-link"><i class="fas fa-edit"></i></button>
-                                              <button class="btn btn-link"><i class="fas fa-trash"></i></button>
-                                          </td>
-                                    </tr>
-                                </tbody>
-                              
-                            </table>
-                        </div> 
                         
                     </div>
                 </div>
@@ -159,96 +135,143 @@
 
 
 
-        <div class="row mt-5" v-if="showCreations">
-            <hr>
+        <div class="row mt-5 bg-light" v-if="showCreations">
+          <div class="mb-5">
+            <br>
             <h1>CV en HTML et CSS</h1>
             <br>
-            <figure>
-                <img src="./images/cv en html et css.png" alt="CV en HTML et CSS" title="CV en HTML et CSS"/>
-                <figcaption> Premier devoir réalisé </figcaption>
-            </figure>
-
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                Ouvrir le modal
-              </button>
-              
-              <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Titre du Modal</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Contenu du Modal...</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                      <!-- Ajoutez ici d'autres boutons ou actions si nécessaire -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <hr>
-            <h1>Cahier des charges</h1>
-            <br>
-            <figure>
-                <img src="./images/cv en html et css.png" alt="CV en HTML et CSS" title="CV en HTML et CSS"/>
-                <figcaption> Deuxième devoir réalisé </figcaption>
-            </figure>
-
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                Ouvrir le modal
-              </button>
-              
-              <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Informations importantes</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Ce devoir à été réaliser avec 2 langages</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <hr>
-              <h1>Dynamiser un espace commentaire</h1>
-              <br>
-              <figure>
-                  <img src="./images/cv en html et css.png" alt="CV en HTML et CSS" title="CV en HTML et CSS"/>
-                  <figcaption> Troisième devoir réalisé </figcaption>
+            <div class="d-flex align-items-start">
+              <figure class="m-0 mx-2">
+                <img src="./images/cv en html et css.png" alt="CV en HTML et CSS" title="CV en HTML et CSS" class="img-fluid"/>
+                <figcaption class="m-0">Premier devoir réalisé</figcaption><br>
               </figure>
-  
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                  Ouvrir le modal
-                </button>
-                
-                <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Titre du Modal</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Contenu du Modal...</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        <!-- Ajoutez ici d'autres boutons ou actions si nécessaire -->
-                      </div>
-                    </div>
+              <figure class="m-0 mx-2">
+                <img src="./images/cv2.png" alt="CV en HTML et CSS" class="img-fluid"/>
+              </figure>
+            </div>
+            
+          
+            <button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#myModal1" style="width: 400px;">
+                Plus d'informations
+            </button>
+          
+            <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Voici les détails du premier devoir</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Ce CV en HTML et CSS a été réalisé le 16 novembre 2023 dans le cadre d'un projet scolaire. Il met en valeur mes compétences en développement web. 
+                      Pour ce devoir, j'ai notamment utilisé GitHub ainsi que du langage HTML et CSS. 
+                      Voici le lien vers le repository pour visionner le code de ce projet : 
+                      <a href="https://github.com/FeuMangue7639/CV" target="_blank">Lien vers le repository GitHub</a>
+                  </p>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        
+          
+          
+          <div class="mb-5">
+            <h1>Cahier des charges pour une entreprise</h1>
+            <br>
+            <div class="d-flex align-items-start">
+              <figure class="m-0 mx-2">
+                <img src="./images/cahier des charges.png" alt="Cahier des charges" title="Cahier des charges" class="img-fluid"/>
+                <figcaption class="m-0">Deuxième devoir réalisé</figcaption><br>
+              </figure>
+            
+              <img src="./images/cahier des charges2.png" alt="Cahier des charges" class="img-fluid"/>
+
+              <figure class="m-0 mx-2">
+                <img src="./images/cahier des charges3.png" alt="Cahier des charges" class="img-fluid"/>
+              </figure>
+            </div>
+            
+          
+            <button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#myModal2" style="width: 400px;">
+                Plus d'informations
+            </button>
+          
+            <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Voici les détails du deuxième devoir</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Mon deuxième projet, axé sur l'élaboration d'un cahier des charges pour une entreprise, a été créé le 29 novembre 2023 dans le but de guider le développement d'un site web interactif. 
+                      Il a été conçu pour répondre aux besoins spécifiques de l'entreprise, en mettant l'accent sur une expérience utilisateur optimale. 
+                      Le projet m'a permis de développer mes compétences en analyse des exigences, ainsi qu'en planification de projet.
+                      <a href="./pdf/Cahier des charges pour la socketterie.pdf" target="_blank">Voici le lien pdf de ce devoir.</a>
+                  </p>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+        
+          <div class="mb-5">
+            <h1>Dynamiser un espace commentaire</h1>
+            <br>
+            <div class="d-flex align-items-start">
+              <figure class="m-0 mx-2">
+                <img src="./images/dynamiser un com.png" alt="Dynamiser un espace commentaire" title="Dynamiser un espace commentaire" class="img-fluid"/>
+                <figcaption class="m-0">Troisième devoir réalisé</figcaption><br>
+              </figure>
+              <figure class="m-0 mx-2">
+                <img src="./images/commentaire2.png" alt="Dynamiser un espace commentaire" class="img-fluid"/>
+              </figure>
+            </div>
+            
+          
+            <button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#myModal3" style="width: 400px;">
+                Plus d'informations
+            </button>
+          
+            <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Voici les détails du troisième devoir</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Dans ce projet réalisé le 10 janvier 2024, j'ai travaillé sur la mise en place d'un espace commentaire dynamique. 
+                      Il permet aux utilisateurs d'interagir et de partager leurs opinions. 
+                      Voici le lien vers le repository pour visionner le code de ce projet : 
+                      <a href="https://github.com/FeuMangue7639/dynamiser-un-espace-commentaire" target="_blank">Lien vers le repository GitHub</a>
+                  </p>
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      
 
     </main>
 

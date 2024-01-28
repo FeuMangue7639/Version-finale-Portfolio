@@ -16,11 +16,11 @@ const App = {
             this.changeNavigationState("home")
         },
         goToCreations() {
-            this.changeNavigationState("create")
+            this.changeNavigationState("creations")
         },
 
         goToFormulaire() {
-            this.changeNavigationState("list")
+            this.changeNavigationState("formulaire")
         },
 
         
@@ -34,10 +34,10 @@ const App = {
                 case "home":
                     this.showHome = true
                     break;
-                case "create":
+                case "creations":
                     this.showCreations = true
                     break;
-                case "list":
+                case "formulaire":
                     this.showFormulaire = true
                     break;
 
