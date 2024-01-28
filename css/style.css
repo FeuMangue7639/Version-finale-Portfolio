@@ -14,8 +14,19 @@ body {
 }
 
 
+.btn-custom {
+  background-color: purple !important;
+  color: white !important;
+}
+
+.btn-custom:hover {
+  background-color: darkviolet !important;
+}
 
 
+h1{
+  text-decoration: underline;
+}
 
 
 
