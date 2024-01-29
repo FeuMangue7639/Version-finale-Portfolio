@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="./favicon/favicon-16x16.ico" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon-16x16.ico" >
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -12,7 +12,7 @@
 
     
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     
@@ -37,7 +37,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" :class="{ active: showHome }" aria-current="page" href="index.html" @click.prevent="goToHome()">Accueil</a>
+                      <a class="nav-link" :class="{ active: showHome }" aria-current="page" href="index.html" @click.prevent="goToHome()">
+                        <img src="./images/favicon-32x32.png" alt="Logo" style="width: 20px; height: 20px; margin-right: 5px;">
+                        Accueil
+                      </a>                      
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" :class="{ active: showCreations }" href="#" @click.prevent="goToCreations()">Créations</a>
@@ -58,8 +61,8 @@
             <br>
             <h1>Présentation breve du développeur</h1>
             <p class="lead">Je m'appelle Hugo Coelho, j'ai 20 ans et je suis étudiant au CEF. J'ai alors décidé de réaliser ce portfolio afin de gagner en visibilité auprès d’éventuels employeurs. L’objectif est de partager mes compétences fraichement acquises grâce à ma formation, ainsi que de présenter les quelques projets que j'ai pu effectuer. </p>
-        <br/>
-        <br/>
+        <br>
+        <br>
         <h1>Compétences du développeur</h1>
         <p class="lead">En tant qu'apprenti développeur, mes compétences et qualités reflètent d'un étudiant passionné et dédié dans le domaine de la programmation informatique. Voici quelques-unes des caractéristiques qui me définissent :
             <br>
@@ -131,7 +134,7 @@
                 </div>
             </div>
 
-        </div>
+        
 
 
 
@@ -142,11 +145,11 @@
             <br>
             <div class="d-flex align-items-start">
               <figure class="m-0 mx-2">
-                <img src="./images/cv en html et css.png" alt="CV en HTML et CSS" title="CV en HTML et CSS" class="img-fluid"/>
-                <figcaption class="m-0">Premier devoir réalisé</figcaption><br>
+                <img src="./images/cv-en-html-et-css.png" alt="CV en HTML et CSS" title="CV en HTML et CSS" class="img-fluid">
+                <figcaption class="m-0">Premier devoir réalisé</figcaption>
               </figure>
               <figure class="m-0 mx-2">
-                <img src="./images/cv2.png" alt="CV en HTML et CSS" class="img-fluid"/>
+                <img src="./images/cv2.png" alt="CV en HTML et CSS" class="img-fluid">
               </figure>
             </div>
             
@@ -155,11 +158,11 @@
                 Plus d'informations
             </button>
           
-            <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Voici les détails du premier devoir</h5>
+                    <h5 class="modal-title" id="exampleModalLabel1">Voici les détails du premier devoir</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -186,14 +189,14 @@
             <br>
             <div class="d-flex align-items-start">
               <figure class="m-0 mx-2">
-                <img src="./images/cahier des charges.png" alt="Cahier des charges" title="Cahier des charges" class="img-fluid"/>
-                <figcaption class="m-0">Deuxième devoir réalisé</figcaption><br>
+                <img src="./images/cahier-des-charges.png" alt="Cahier des charges" title="Cahier des charges" class="img-fluid">
+                <figcaption class="m-0">Deuxième devoir réalisé</figcaption>
               </figure>
             
-              <img src="./images/cahier des charges2.png" alt="Cahier des charges" class="img-fluid"/>
+              <img src="./images/cahier-des-charges2.png" alt="Cahier des charges" class="img-fluid">
 
               <figure class="m-0 mx-2">
-                <img src="./images/cahier des charges3.png" alt="Cahier des charges" class="img-fluid"/>
+                <img src="./images/cahier-des-charges3.png" alt="Cahier des charges" class="img-fluid">
               </figure>
             </div>
             
@@ -202,11 +205,11 @@
                 Plus d'informations
             </button>
           
-            <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Voici les détails du deuxième devoir</h5>
+                    <h5 class="modal-title" id="exampleModalLabel2">Voici les détails du deuxième devoir</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -214,7 +217,7 @@
                       Mon deuxième projet, axé sur l'élaboration d'un cahier des charges pour une entreprise, a été créé le 29 novembre 2023 dans le but de guider le développement d'un site web interactif. 
                       Il a été conçu pour répondre aux besoins spécifiques de l'entreprise, en mettant l'accent sur une expérience utilisateur optimale. 
                       Le projet m'a permis de développer mes compétences en analyse des exigences, ainsi qu'en planification de projet.
-                      <a href="./pdf/Cahier des charges pour la socketterie.pdf" target="_blank">Voici le lien pdf de ce devoir.</a>
+                      <a href="./pdf/Cahier-des-charges-pour-la-socketterie.pdf" target="_blank">Voici le lien pdf de ce devoir.</a>
                   </p>
                   
                   </div>
@@ -233,11 +236,11 @@
             <br>
             <div class="d-flex align-items-start">
               <figure class="m-0 mx-2">
-                <img src="./images/dynamiser un com.png" alt="Dynamiser un espace commentaire" title="Dynamiser un espace commentaire" class="img-fluid"/>
-                <figcaption class="m-0">Troisième devoir réalisé</figcaption><br>
+                <img src="./images/dynamiser-un-com.png" alt="Dynamiser un espace commentaire" title="Dynamiser un espace commentaire" class="img-fluid">
+                <figcaption class="m-0">Troisième devoir réalisé</figcaption>
               </figure>
               <figure class="m-0 mx-2">
-                <img src="./images/commentaire2.png" alt="Dynamiser un espace commentaire" class="img-fluid"/>
+                <img src="./images/commentaire2.png" alt="Dynamiser un espace commentaire" class="img-fluid">
               </figure>
             </div>
             
@@ -246,11 +249,11 @@
                 Plus d'informations
             </button>
           
-            <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Voici les détails du troisième devoir</h5>
+                    <h5 class="modal-title" id="exampleModalLabel3">Voici les détails du troisième devoir</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -278,9 +281,9 @@
 
 
     <footer>
-        <p><a href="https://www.linkedin.com/in/hugo-coelho-6bb78229b/" target="_blank"> <img src="./images/logo-linkedin.png" > </a></p>
-        <p><a href="https://twitter.com/HugoCoe48076226" target="_blank"> <img src="./images/twitter.png" > </a></p>
-        <p><a href="https://github.com/FeuMangue7639" target="_blank"> <img src="./images/signe-github.png" > </a></p>
+        <p><a href="https://www.linkedin.com/in/hugo-coelho-6bb78229b/" target="_blank"> <img src="./images/logo-linkedin.png" alt="logo linkedin"> </a></p>
+        <p><a href="https://twitter.com/HugoCoe48076226" target="_blank"> <img src="./images/twitter.png" alt="logo twitter"> </a></p>
+        <p><a href="https://github.com/FeuMangue7639" target="_blank"> <img src="./images/signe-github.png" alt="logo github"> </a></p>
     </footer>
     
     <p class="date" style="padding-left: 14px;">Dernière mise à jour le 7 février 2024</p>
