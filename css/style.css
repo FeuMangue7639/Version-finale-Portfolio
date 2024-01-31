@@ -29,6 +29,24 @@ h1{
 }
 
 
+.navbar-nav .nav-link.active-link {
+  text-decoration: underline;
+}
+
+
+img.img-fluid {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+img.img-fluid:hover {
+  box-shadow: 5px 5px 10px rgba(128, 0, 128, 0.5); /* Violet shadow */
+}
+
+/* Facultatif : Ajoutez une transition douce pour une animation agréable */
+figure:hover {
+  transform: scale(1.05); /* Facultatif : Zoom légèrement l'image au survol */
+  transition: transform 0.3s ease-in-out;
+}
 
 
 
